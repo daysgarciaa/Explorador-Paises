@@ -1,0 +1,21 @@
+BuildAppJob (Freestyle) — checklist de configuración
+=====================================================
+
+1. Source Code Management: Git — URL del repositorio GitHub.
+2. Credentials: credencial tipo usuario/contraseña o token con acceso de lectura al repo.
+3. Build → Add build step → "Execute shell" (Linux) o equivalente:
+
+   chmod +x build.sh
+   ./build.sh
+
+   Opcional (país distinto):
+
+   export COUNTRY_NAME="Mexico"
+   ./build.sh
+
+4. Guardar. Ejecutar build y verificar en Console Output:
+   - docker build sin errores
+   - salida de app.py con datos de RestCountries / Open-Meteo
+5. Tras el primer run, confirmar que en el workspace exista output.txt (también se genera con tee en la máquina donde corre Docker).
+
+Nota: el agente Jenkins debe tener Docker instalado y permisos para docker run/build.
