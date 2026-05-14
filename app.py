@@ -82,16 +82,16 @@ def fetch_weather(lat, lon):
 
 def weather_description(code):
     table = {
-        0:  "Cielo despejado ☀️",
-        1:  "Mayormente despejado 🌤️",
-        2:  "Parcialmente nublado ⛅",
-        3:  "Nublado ☁️",
-        45: "Niebla 🌫️",
-        51: "Llovizna ligera 🌦️",
-        61: "Lluvia ligera 🌧️",
-        71: "Nieve ligera ❄️",
-        80: "Chubascos ⛈️",
-        95: "Tormenta eléctrica ⛈️",
+        0:  "Cielo despejado ",
+        1:  "Mayormente despejado ",
+        2:  "Parcialmente nublado ",
+        3:  "Nublado ",
+        45: "Niebla ",
+        51: "Llovizna ligera ",
+        61: "Lluvia ligera ",
+        71: "Nieve ligera ",
+        80: "Chubascos ",
+        95: "Tormenta eléctrica ",
     }
     for threshold in sorted(table.keys(), reverse=True):
         if code >= threshold:
