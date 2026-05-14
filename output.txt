@@ -1,0 +1,32 @@
+========== Registro generado: 2026-05-14 (preparación repo; se sobrescribe al ejecutar ./build.sh con Docker) ==========
+
+NOTA: Las secciones "docker ps" deben generarse en tu máquina o en Jenkins con Docker instalado:
+  chmod +x build.sh && COUNTRY_NAME="Chile" ./build.sh
+Ese comando reemplaza por completo este archivo con salida real de docker y logs del contenedor.
+
+========== docker ps -a ==========
+(Pendiente: ejecutar ./build.sh — aquí aparecerá la lista completa `docker ps -a` con samplerunning en estado Exited (0).)
+
+========== filtro name=samplerunning ==========
+(Pendiente: ejecutar ./build.sh — tabla filtrada por nombre del contenedor.)
+
+========== docker logs samplerunning ==========
+(Equivalente a la salida del contenedor; capturado con `py app.py` en el host — mismas APIs RestCountries + Open-Meteo.)
+
+══════════════════════════════════════════════════════════
+  🌍  WORLD EXPLORER — País consultado: Chile
+══════════════════════════════════════════════════════════
+
+  📋  DATOS DEL PAÍS
+  nombre_pais         : Republic of Chile
+  capital             : Santiago
+  moneda              : Chilean peso (CLP) $
+  idioma              : Spanish
+
+  🌤️  CLIMA ACTUAL
+  temperatura         : 5.9 °C
+  condicion           : Cielo despejado ☀️
+
+══════════════════════════════════════════════════════════
+  ✅  Consulta completada exitosamente.
+══════════════════════════════════════════════════════════
