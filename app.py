@@ -101,7 +101,7 @@ def weather_description(code):
 def main():
     sep = "═" * 58
     print(sep)
-    print(f"  🌍  WORLD EXPLORER — País consultado: {COUNTRY_NAME}")
+    print(f"    WORLD EXPLORER — País consultado: {COUNTRY_NAME}")
     print(sep)
 
     country = fetch_country(COUNTRY_NAME)
@@ -135,16 +135,16 @@ def main():
             wcode       = weather.get("weathercode", -1)
             condicion   = weather_description(wcode) if isinstance(wcode, int) else "N/D"
 
-    print(f"\n  📋  DATOS DEL PAÍS")
+    print(f"\n    DATOS DEL PAÍS")
     print(f"  {'nombre_pais':<20}: {nombre_pais}")
     print(f"  {'capital':<20}: {capital}")
     print(f"  {'moneda':<20}: {moneda}")
     print(f"  {'idioma':<20}: {idioma}")
-    print(f"\n  🌤️  CLIMA ACTUAL")
+    print(f"\n    CLIMA ACTUAL")
     print(f"  {'temperatura':<20}: {temperatura}")
     print(f"  {'condicion':<20}: {condicion}")
     print(f"\n{sep}")
-    print("  ✅  Consulta completada exitosamente.")
+    print("    Consulta completada exitosamente.")
     print(sep)
 
 if __name__ == "__main__":
